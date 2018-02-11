@@ -81,7 +81,9 @@ We could infer that if the custom functionality relates to visual presentation, 
 
 **Add functionality only to functions.php.**
 
-1.  Add custom excerpt length functionality to your active theme's functions.php file by inserting the following code into the file: `<?php function themename_custom_excerpt_length( $length ) { return 40; //number of words in excerpt } add_filter( 'excerpt_length', 'themename_custom_excerpt_length'); ?>`
+1.  Add custom excerpt length functionality to your active theme's functions.php file by inserting the following code into the file: 
+```<?php function themename_custom_excerpt_length( $length ) { return 40; //number of words in excerpt } add_filter( 'excerpt_length', 'themename_custom_excerpt_length'); ?>
+```
 2.  Create a test blog post with a long excerpt. Verify it works correctly, then switch themes.
 3.  Notice that the functionality no longer exists because it was placed in a specific theme's functions.php file.
 
